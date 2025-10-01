@@ -118,15 +118,15 @@ volumes:
     with open(base_path / "docker-compose.yml", "w") as dc:
         dc.write(compose_content)
 
-    print(f"\n✅ Proiectul '{project_name}' a fost generat cu succes în directorul '{base_path.absolute()}'")
+    print(f"\n✅ The project '{project_name}' has been successfully generated in the directory '{base_path.absolute()}'")
 
 # CLI Prompt
 def main():
-    print("=== Generator de containere PHP + MySQL ===")
-    project_name = (input("Nume proiect (fără spații): ").strip())
-    web_port = input_with_default("Port web Apache", "8080")
-    sql_port = input_with_default("Port MySQL", "3306")
-    debug_port = input_with_default("Port Xdebug", "9003")
+    print("=== PHP + MySQL Container Generator ===")
+    project_name = (input("Project name (no spaces): ").strip())
+    web_port = input_with_default("Apache Web Port", "8080")
+    sql_port = input_with_default("MySQL Port", "3306")
+    debug_port = input_with_default("Xdebug Port", "9003")
 
     generate_files(project_name.lower(), web_port, sql_port, debug_port)
 
