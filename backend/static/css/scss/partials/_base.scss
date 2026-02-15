@@ -1,0 +1,22 @@
+@use "variables" as *;
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: $bg-color;
+    color: $text-color;
+    margin: 0;
+    background-image: radial-gradient(circle at 2px 2px, #111 1px, transparent 0);
+    background-size: 30px 30px;
+}
+
+.mono {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #222;
+}

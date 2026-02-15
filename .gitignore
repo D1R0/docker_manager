@@ -1,0 +1,13 @@
+# Python
+backend/venv/
+*.pyc
+__pycache__/
+
+# Logs
+*.log
+projects/*/deployment.log
+
+# OS
+.DS_Store
+.idea/
+.vscode/

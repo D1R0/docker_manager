@@ -1,0 +1,29 @@
+// --- ANIMATIONS ---
+@keyframes cardReveal {
+    from { opacity: 0; transform: translateY(20px) scale(0.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes streamDown {
+    from { max-height: 0; opacity: 0; }
+    to { max-height: 2000px; opacity: 1; }
+}
+
+@keyframes toastIn {
+    from { transform: translate(-50%, 100%); opacity: 0; }
+    to { transform: translate(-50%, 0); opacity: 1; }
+}
+
+@keyframes modalZoom {
+    from { transform: scale(0.9) translateY(20px); }
+    to { transform: scale(1) translateY(0); }
+}
+
+@keyframes scanMove {
+    0% { top: 0; }
+    100% { top: 100%; }
+}
+
+@keyframes spinHud {
+    to { transform: rotate(360deg); }
+}

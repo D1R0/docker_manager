@@ -1,0 +1,12 @@
+{
+  "name": "fleet-os-styles",
+  "version": "1.0.0",
+  "description": "SASS management for Fleet OS",
+  "scripts": {
+    "build": "sass scss/main.scss main.css",
+    "watch": "sass --watch scss/main.scss:main.css"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
+}
